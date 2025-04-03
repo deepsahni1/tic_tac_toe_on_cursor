@@ -1,6 +1,7 @@
 # React Tic Tac Toe Game
 
-![Uploading image.png…]()
+<img width="322" alt="image" src="https://github.com/user-attachments/assets/9f7672f6-24f9-4b78-a523-794ae4599b4a" />
+
 
 
 A modern, interactive Tic Tac Toe game built with React 19 and Vite. This project showcases the latest React features and interactive UI elements.
@@ -29,7 +30,7 @@ A modern, interactive Tic Tac Toe game built with React 19 and Vite. This projec
 
 | Game in Progress | X Wins! | Draw Game |
 |:---:|:---:|:---:|
-| ![Game in Progress](./screenshots/game-in-progress.png) | ![X Wins](./screenshots/x-wins.png) | ![Draw Game](./screenshots/draw-game.png) |
+|<img width="220" alt="image" src="https://github.com/user-attachments/assets/a32dc497-34ec-46a6-be8b-35e73e914bd3" />| <img width="220" alt="image" src="https://github.com/user-attachments/assets/31e71e0e-2d3f-4818-a9ca-28f6286b18da" /> |<img width="220" alt="image" src="https://github.com/user-attachments/assets/4f6a4158-31a4-4334-8bf5-62cc59bbe460" /> |
 
 ## 🔧 Technology Stack
 
