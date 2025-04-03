@@ -1,0 +1,97 @@
+:root {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+  
+  .square {
+    background-color: #333;
+    border-color: #666;
+  }
+  
+  .square:hover {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Keep X and O colors vibrant in dark mode */
+  span.x {
+    color: #FF7070 !important; /* Brighter red for dark mode */
+  }
+  
+  span.o {
+    color: #6BF76B !important; /* Brighter green for dark mode */
+  }
+  
+  /* Dark mode winning squares styling */
+  .winning-square {
+    animation: darkPulse 1.5s infinite !important;
+  }
+  
+  .winning-square.horizontal::before {
+    background-color: rgba(255, 215, 0, 0.8) !important;
+  }
+  
+  .winning-square.vertical::before {
+    background-color: rgba(255, 215, 0, 0.8) !important;
+  }
+  
+  .winning-square.diagonal-1::before {
+    background-color: rgba(255, 215, 0, 0.8) !important;
+  }
+  
+  .winning-square.diagonal-2::before {
+    background-color: rgba(255, 215, 0, 0.8) !important;
+  }
+  
+  /* Dark mode button styling */
+  .reset-button, .sound-button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .reset-button:hover, .sound-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  @keyframes darkPulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+    }
+  }
+}
